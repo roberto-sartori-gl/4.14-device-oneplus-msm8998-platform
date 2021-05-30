@@ -13,10 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/yoshino
-
-SOMC_PLATFORM := yoshino
-SOMC_KERNEL_VERSION := 4.14
+PLATFORM_COMMON_PATH := device/oneplus/msm8998-platform
 
 PRODUCT_PLATFORM_SOD := true
 
@@ -143,8 +140,8 @@ PRODUCT_COPY_FILES += \
 
 # Platform specific init
 PRODUCT_PACKAGES += \
-    init.yoshino \
-    init.yoshino.pwr \
+    init.msm8998 \
+    init.msm8998.pwr \
     ueventd
 
 # Audio
