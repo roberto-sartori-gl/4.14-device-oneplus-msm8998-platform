@@ -29,22 +29,7 @@
 
 static inline const char* getBTDefaultName()
 {
-    char device[PROPERTY_VALUE_MAX];
-    property_get("ro.boot.hardware", device, "");
-
-    if (!strcmp("maple", device)) {
-        return "Xperia XZ Premium";
-    }
-
-    if (!strcmp("poplar", device)) {
-        return "Xperia XZ1";
-    }
-
-    if (!strcmp("lilac", device)) {
-        return "Xperia XZ1 Compact";
-    }
-
-    return "Xperia";
+    return "OnePlus 5";
 }
 
 #define BTM_DEF_LOCAL_NAME getBTDefaultName()
