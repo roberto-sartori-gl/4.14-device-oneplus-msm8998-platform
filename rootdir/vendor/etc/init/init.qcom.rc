@@ -30,6 +30,7 @@ on init
 on boot
     # WLAN MAC
     chown wifi wifi /sys/module/wlan/parameters/fwpath
+    chmod 0600 /sys/kernel/boot_wlan/boot_wlan
     chown wifi wifi /sys/kernel/boot_wlan/boot_wlan
 
     # update foreground cpuset now that processors are up
