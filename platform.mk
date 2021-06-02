@@ -124,11 +124,13 @@ PRODUCT_COPY_FILES += \
 
 # Touch IDC
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/vendor/usr/idc/clearpad.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/clearpad.idc
+    $(SONY_ROOT)/vendor/usr/idc/clearpad.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/clearpad.idc \
+    $(SONY_ROOT)/vendor/usr/idc/fpc1020.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/fpc1020.idc
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
+    $(SONY_ROOT)/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
+    $(SONY_ROOT)/vendor/usr/keylayout/fpc1020.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fpc1020.kl
 
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += \
